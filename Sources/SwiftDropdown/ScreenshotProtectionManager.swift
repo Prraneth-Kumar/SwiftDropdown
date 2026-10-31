@@ -20,6 +20,11 @@ public final class ScreenshotProtectionManager: ScreenshotProtectionManagerProto
     weak public var protectedWindow: UIWindow?
     public var secureTextField: UITextField?
     
+    public init(protectedWindow: UIWindow? = nil, secureTextField: UITextField? = nil) {
+        self.protectedWindow = protectedWindow
+        self.secureTextField = secureTextField
+    }
+    
     public func enableProtection(for window: UIWindow) {
         DispatchQueue.main.async { [weak self] in
             guard let self else { return }
