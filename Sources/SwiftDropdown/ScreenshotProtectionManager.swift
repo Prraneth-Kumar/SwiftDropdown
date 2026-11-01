@@ -16,7 +16,7 @@ public protocol ScreenshotProtectionManagerProtocol: AnyObject {
     func disableProtection()
 }
 
-public final class ScreenshotProtectionManager: ScreenshotProtectionManagerProtocol {
+public class ScreenshotProtectionManager: ScreenshotProtectionManagerProtocol {
     weak public var protectedWindow: UIWindow?
     public var secureTextField: UITextField?
     
