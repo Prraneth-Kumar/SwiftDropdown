@@ -7,7 +7,7 @@
 
 
 import UIKit
-
+// final
 public protocol ScreenshotProtectionManagerProtocol: AnyObject {
     var protectedWindow: UIWindow? { get }
     var secureTextField: UITextField? { get }
